@@ -20,7 +20,7 @@ func main() {
 		return c.SendString("Where Is Minhaj")
 	})
 
-	// GET http://localhost:3000/api/user/john
+	// http:localhost:8080/api/minhajsadik/documents/my-projects/Go-MongoDB
 
 	app.Get("/api/*", func(c *fiber.Ctx) error {
 		return c.SendString("API path: " + c.Params("*"))
