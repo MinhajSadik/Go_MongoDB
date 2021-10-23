@@ -11,7 +11,7 @@ func main() {
 		return c.SendString("value:" + c.Params("value"))
 	})
 
-	// GET http://localhost:3000/Minhaj
+	// GET http://localhost:8080/Minhaj
 
 	app.Get("/:name?", func(c *fiber.Ctx) error {
 		if c.Params("name") != "" {
